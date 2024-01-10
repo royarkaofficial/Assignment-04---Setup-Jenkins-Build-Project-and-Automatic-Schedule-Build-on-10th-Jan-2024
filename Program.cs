@@ -8,9 +8,9 @@ namespace Automatic_Build
 {
     class Product
     {
-        public string PName { get; set; }
+        public string? PName { get; set; }
         public decimal PPrice { get; set; }
-        public string PBrand { get; set; }
+        public string? PBrand { get; set; }
         public DateTime ManufacturingDate { get; set; }
         public DateTime ExpiryDate { get; set; }
     }
@@ -60,6 +60,14 @@ namespace Automatic_Build
                 PBrand = "BrandB",
                 ManufacturingDate = DateTime.Parse("2023-04-20"),
                 ExpiryDate = DateTime.Parse("2023-08-31")
+            },
+            new Product
+            {
+                PName = "Product6",
+                PPrice = 28.99m,
+                PBrand = "BrandD",
+                ManufacturingDate = DateTime.Parse("2023-04-19"),
+                ExpiryDate = DateTime.Parse("2023-08-30")
             }
         };
 
